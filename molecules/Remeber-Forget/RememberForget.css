@@ -1,0 +1,26 @@
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.remember-me{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 10px;
+}
+
+.remember-me label{
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.remember-me  input[type="checkbox"]
+{
+    border: 1px solid var(--navyBlue);
+    box-shadow: none;
+    /* width: 15%; */
+}

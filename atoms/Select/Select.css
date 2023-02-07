@@ -1,0 +1,13 @@
+select{
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px 2px #e3e7f3;
+    background-color: white;
+}
+
+select option{
+    color: #0B005D;
+}

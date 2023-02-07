@@ -1,0 +1,23 @@
+@import url('../atoms/AnchorTag/AnchorTag.css');
+@import url('../atoms/BackgroundImg/Background.css');
+@import url('../atoms/Heading/Heading.css');
+@import url('../atoms/Input/Input.css');
+@import url('../atoms/Label/Label.css');
+@import url('../atoms/Select/Select.css');
+@import url('../molecules/Country-Label/Country-Label.css');
+@import url('../molecules/Gender/Gender.css');
+@import url('../molecules/HaveAccount/HaveAccount.css');
+@import url('../molecules/HeaderText/HeaderText.css');
+@import url('../molecules/Input-Label/Input-Label.css');
+@import url('../molecules/Remeber-Forget/RememberForget.css');
+@import url('../organisms/Form.css');
+@import url('../templates/LoginTemplate/LoginTemplate.css');
+@import url('../templates/RegisterTemplate/RegisterTemplate.css');
+@import url('variables.css');
+
+body {
+    width: 100%;
+    height: 100%;
+    color: rgb(11, 0, 93);
+    background-color: rgb(246, 250, 255);
+}

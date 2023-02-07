@@ -1,0 +1,23 @@
+.no-account{
+    display: flex;
+    font-weight: 700;
+    font-size: 15px;
+    /* justify-content: space-between; */
+    justify-content: center;
+    padding-bottom: 10px;
+    color: var(--navyBlue);
+}
+
+.hide{
+    display: none !important;
+}
+
+@media only screen and (max-width:566px) {
+    .no-account{
+        /* flex-direction: column; */
+        font-size: 12px;
+    }
+    .no-account a{
+        font-size: 12px;
+    }
+}
