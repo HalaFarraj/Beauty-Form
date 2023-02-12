@@ -9,25 +9,19 @@ export class Gender {
 
     let label = new Label('Gender');
 
-    let male = new InputLabelDiv(
-      'input',
-      'Male',
-      'radio',
-      '',
-      'male',
-      'input',
-      'gender'
-    );
+    let male = new InputLabelDiv({
+      labelText: 'Male',
+      inputType: 'radio',
+      value: 'male',
+      name: 'gender',
+    });
 
-    let female = new InputLabelDiv(
-      'input',
-      'Female',
-      'radio',
-      '',
-      'female',
-      'input',
-      'gender'
-    );
+    let female = new InputLabelDiv({
+      labelText: 'Female',
+      inputType: 'radio',
+      value: 'female',
+      name: 'gender',
+    });
     // let maleInput = new Input('radio', '', 'male', '', 'gender');
     // let maleLabel = new Label('Male');
 
@@ -36,6 +30,7 @@ export class Gender {
 
     this.genderDiv.appendChild(label.Label);
 
+    // uncomment these
     this.genderDiv.appendChild(male.InputLabelDiv);
     this.genderDiv.appendChild(female.InputLabelDiv);
 

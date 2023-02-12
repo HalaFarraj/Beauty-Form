@@ -1,22 +1,23 @@
 import { HaveAccount } from '../molecules/HaveAccount/HaveAccount.js';
 import { MAPPING } from '../constants/mapping.js';
+import { InputLabelDiv } from '../molecules/Input-Label/Input-Label.js';
 
 export class Form {
-  // constructor(formName, haveAccount, ...fields) {
   constructor(formName, haveAccount, fields) {
     let form = document.createElement('form');
 
-    // const x = MAPPING[fields[0].atom];
-    console.log(
-      new fields[0].atom({ ...fields[0], onChange: this.onChange })
-    );
+    for (let i = 0; i < fields.length; i++) {
+      let getterName = fields[i].getterName;
 
-    let elemnt = new fields[0].atom({
-      ...fields[0],
-      onChange: this.onChange,
-    });
-    form.append(elemnt);
+      let element = new fields[i].atom({
+        ...fields[i],
+        onChange: this.onChange,
+        onFocus: this.onChange,
+        onBlur: this.onChange,
+      })[getterName];
 
+      form.append(element);
+    }
     form.name = formName;
     this.formContainer = document.createElement('div');
     this.formContainer.className = 'login-body';
@@ -29,6 +30,7 @@ export class Form {
   onChange(event) {
     console.log(event.target.value);
     console.log('This is onChange function');
+    console.log(this);
   }
   get Form() {
     return this.formContainer;

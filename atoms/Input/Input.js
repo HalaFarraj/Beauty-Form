@@ -22,6 +22,7 @@ let objectVariant = {
 
 export class Input {
   constructor(
+    {
     type = 'text',
     placeholder = '',
     value = '',
@@ -31,6 +32,7 @@ export class Input {
     onChange,
     onFocus,
     onBlur
+    }
   ) {
     this.input = document.createElement('input');
     this.input.type = type;

@@ -2,7 +2,7 @@ import { Label } from '../../atoms/Label/Label.js';
 import { Select } from '../../atoms/Select/Select.js';
 
 export class CountryLabel {
-  constructor(labelText, selectName, selectID, options) {
+  constructor({labelText, selectName, selectID, options}) {
     this.countryLabelDiv = document.createElement('div');
     this.countryLabelDiv.className = 'inputs country';
 
@@ -12,7 +12,7 @@ export class CountryLabel {
     let select = new Select(
       selectName,
       selectID,
-      undefined,
+      // undefined,
       ...options
     ).Select;
     this.countryLabelDiv.appendChild(select);

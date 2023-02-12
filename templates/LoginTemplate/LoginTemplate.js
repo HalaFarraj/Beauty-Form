@@ -1,10 +1,7 @@
 import { BackgroundImg } from '../../atoms/BackgroundImg/BackgroundImg.js';
 import { HeaderText } from '../../molecules/HeaderText/HeaderText.js';
-import { InputLabelDiv } from '../../molecules/Input-Label/Input-Label.js';
-import { RememberForgetDiv } from '../../molecules/Remeber-Forget/RememberForget.js';
 import { Form } from '../../organisms/Form.js';
-import { Input } from '../../atoms/Input/Input.js';
-import { HaveAccount } from '../../molecules/HaveAccount/HaveAccount.js';
+import { loginElements } from '../../constants/login.js';
 
 export class LoginTemplate {
   constructor() {
@@ -21,43 +18,9 @@ export class LoginTemplate {
     let headerText = new HeaderText('Welcome back!', '').HeaderText;
     loginForm.appendChild(headerText);
 
-    let emailInputs = new InputLabelDiv(
-      'inputs',
-      'Email',
-      'email',
-      'Email'
-    ).InputLabelDiv;
-
-    let passwordInputs = new InputLabelDiv(
-      'inputs',
-      'Password',
-      'password',
-      'Password'
-    ).InputLabelDiv;
-
-    let forgetRememberDiv = new RememberForgetDiv().RememberForgetDiv;
-
-    let loginButton = new Input(
-      'submit',
-      undefined,
-      'Login',
-      'submit'
-    ).Input;
-
-    let formBody = new Form(
-      'loginForm',
-      false,
-      emailInputs,
-      passwordInputs,
-      forgetRememberDiv,
-      loginButton
-    ).Form;
+    let formBody = new Form('loginForm', false, loginElements).Form;
 
     loginForm.appendChild(formBody);
-
-    // let haveAccount = new HaveAccount(false).HaveAccount;
-    // loginForm.appendChild(haveAccount);
-
     this.templateContainer.appendChild(loginForm);
   }
 
@@ -65,4 +28,3 @@ export class LoginTemplate {
     return this.templateContainer;
   }
 }
-

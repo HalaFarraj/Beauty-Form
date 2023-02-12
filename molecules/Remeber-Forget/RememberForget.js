@@ -6,13 +6,18 @@ export class RememberForgetDiv {
     this.rememberForgetDiv = document.createElement('div');
     this.rememberForgetDiv.className = 'remember-forget';
     let rememberMe = new InputLabelDiv(
-      'remember-me',
-      'Remember me',
-      'checkbox',
-      '',
-      '',
-      'checkbox',
-      ''
+      {
+        labelText: 'Remember Me',
+        value: 'rememberMe',
+        inputType: 'checkbox',
+      }
+      // 'remember-me',
+      // 'Remember me',
+      // 'checkbox',
+      // '',
+      // '',
+      // 'checkbox',
+      // ''
     );
     let forgotPassowrd = new AnchorTag('Forgot Password?');
     this.rememberForgetDiv.appendChild(rememberMe.InputLabelDiv);
