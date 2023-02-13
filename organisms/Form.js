@@ -31,8 +31,8 @@ export class Form {
   }
 
   onChange(event) {
-    if (event.target.parentNode == document.forms['registerForm']) {
-      // console.log(event.target)
+    if (event.target.parentNode.parentNode== document.forms['registerForm']|| event.target.parentNode== document.forms['registerForm']) {
+      console.log(event.target.parentNode.parentNode)
       if (event.target.type == 'submit') {
         console.log(event.target)
         let email = document.forms['registerForm']['email'].value;
