@@ -15,14 +15,12 @@ let password;
 let confirmPassword;
 
 let objectVariant = {
-  input : 'input',
-  input2: 'input2'
-}
-
+  input: 'input',
+  input2: 'input2',
+};
 
 export class Input {
-  constructor(
-    {
+  constructor({
     type = 'text',
     placeholder = '',
     value = '',
@@ -31,9 +29,9 @@ export class Input {
     name = '',
     onChange,
     onFocus,
-    onBlur
-    }
-  ) {
+    onBlur,
+    onSubmit,
+  }) {
     this.input = document.createElement('input');
     this.input.type = type;
     this.input.placeholder = placeholder;
@@ -43,14 +41,21 @@ export class Input {
     this.input.name = name;
     this.input.setAttribute('required', '');
 
-    if(onChange){
-      this.input.addEventListener('change',onChange)
+    if (onChange) {
+      console.log('onChange is called:', onChange);
+      this.input.addEventListener('change', onChange);
     }
-    if(onFocus){
-      this.input.addEventListener('focus',onFocus)
+    // if (onFocus) {
+    //   console.log('onFocus is called:', onFocus);
+    //   this.input.addEventListener('focus', onFocus);
+    // }
+    if (onBlur) {
+      // console.log('onBlur is called:', onBlur);
+      this.input.addEventListener('blur', onBlur);
     }
-    if(onBlur){
-      this.input.addEventListener('blur',onBlur)
+    if (onSubmit) {
+      console.log('onSubmit is called:', onSubmit);
+      this.input.addEventListener('submit', onSubmit);
     }
     //   if (this.input.type == 'submit'){
     //     this.input.addEventListener('click', () => {
@@ -126,53 +131,53 @@ export class Input {
     // });
   }
 
-  CheckInput() {
-    if (this.input.type == 'submit') {
-      this.input.addEventListener('submit', () => {
-        if (this.input.value == 'Create Account') {
-          if (validEmail && validPassword && validConfirmPassword) {
-            console.log('Create Account button is here');
-            if (confirmPassword === password) {
-              register(email, password);
-            }
-          }
-        } else {
-          if (this.input.value == 'Login') {
-            signIn(email, password);
-          }
-        }
-        e.preventDefault();
-      });
-    } else {
-      this.input.addEventListener('focusout', () => {
-        if (this.input.type == 'email') {
-          console.log(validateEmail(this.input.value));
-          validEmail = validateEmail(this.input.value);
-          if (validEmail) {
-            email = this.input.value;
-          }
-        } else if (this.input.type == 'password') {
-          if (this.input.name == 'password') {
-            validPassword = validatePassword(this.input.value);
-            if (validPassword) {
-              password = this.input.value;
-            }
-          } else {
-            if (this.input.name == 'confirmPassword') {
-              console.log(validatePassword(this.input.value));
-              validConfirmPassword = validatePassword(
-                this.input.value
-              );
-              if (validConfirmPassword) {
-                confirmPassword = this.input.value;
-              }
-            }
-          }
-        } else {
-        }
-      });
-    }
-  }
+  // CheckInput() {
+  //   if (this.input.type == 'submit') {
+  //     this.input.addEventListener('submit', () => {
+  //       if (this.input.value == 'Create Account') {
+  //         if (validEmail && validPassword && validConfirmPassword) {
+  //           console.log('Create Account button is here');
+  //           if (confirmPassword === password) {
+  //             register(email, password);
+  //           }
+  //         }
+  //       } else {
+  //         if (this.input.value == 'Login') {
+  //           signIn(email, password);
+  //         }
+  //       }
+  //       e.preventDefault();
+  //     });
+  //   } else {
+  //     this.input.addEventListener('focusout', () => {
+  //       if (this.input.type == 'email') {
+  //         console.log(validateEmail(this.input.value));
+  //         validEmail = validateEmail(this.input.value);
+  //         if (validEmail) {
+  //           email = this.input.value;
+  //         }
+  //       } else if (this.input.type == 'password') {
+  //         if (this.input.name == 'password') {
+  //           validPassword = validatePassword(this.input.value);
+  //           if (validPassword) {
+  //             password = this.input.value;
+  //           }
+  //         } else {
+  //           if (this.input.name == 'confirmPassword') {
+  //             console.log(validatePassword(this.input.value));
+  //             validConfirmPassword = validatePassword(
+  //               this.input.value
+  //             );
+  //             if (validConfirmPassword) {
+  //               confirmPassword = this.input.value;
+  //             }
+  //           }
+  //         }
+  //       } else {
+  //       }
+  //     });
+  //   }
+  // }
 
   get Input() {
     return this.input;

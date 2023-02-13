@@ -14,9 +14,10 @@ export class Form {
 
       let element = new fields[i].atom({
         ...fields[i],
-        onChange: '',
-        onFocus: this.onChange,
+        // onChange: this.onChange,
+        // onFocus: this.onChange,
         onBlur: this.onChange,
+        
       })[getterName];
 
       form.append(element);
@@ -33,25 +34,25 @@ export class Form {
   onChange(event) {
     if (document.forms['registerForm']) {
       if (event.target.type == 'submit') {
+
         //sign up
         let email = document.forms['registerForm']['email'].value;
-        let password =
-          document.forms['registerForm']['password'].value;
+        let password = document.forms['registerForm']['password'].value;
 
-        register(email, password);
-      } else {
+        register(email,password)
+      } 
+      else {
         console.log(event.target);
         let errorMsg = checkField(event.target);
-        console.log(
-          '********************************This is onChange function'
-        );
+        console.log('********************************This is onChange function');
         // console.log(this);
       }
-    } else {
+    }
+    else{
       if (event.target.type == 'submit') {
-        let email = document.forms['loginForm']['email'].value;
-        let password = document.forms['loginForm']['password'].value;
-        signIn(email, password);
+      let email = document.forms['loginForm']['email'].value;
+      let password = document.forms['loginForm']['password'].value;
+      signIn(email,password )
       }
     }
   }

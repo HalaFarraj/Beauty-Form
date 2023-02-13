@@ -8,7 +8,7 @@ const registerContainer = new RegisterTemplate();
 const loginContainer = new LoginTemplate();
 
 document.body.append(loginContainer.LoginTemplate);
-document.body.removeChild(loginContainer.LoginTemplate)
+// document.body.removeChild(loginContainer.LoginTemplate)
 document.body.append(registerContainer.RegisterTemplate);
 
 

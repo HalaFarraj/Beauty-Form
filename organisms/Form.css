@@ -12,7 +12,9 @@
     font-size: 15px;
     font-weight: bold;
 }
-
+.hide-content{
+    display: none !important;
+}
 @media only screen and (min-width:768px){
     .login-body{
         width: 80%;

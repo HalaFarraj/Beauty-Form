@@ -1,5 +1,6 @@
 import { InputLabelDiv } from '../Input-Label/Input-Label.js';
 import { AnchorTag } from '../../atoms/AnchorTag/AnchorTag.js';
+import { switchContent } from '../../utilities/switchContent.js';
 
 export class RememberForgetDiv {
   constructor() {
@@ -19,7 +20,9 @@ export class RememberForgetDiv {
       // 'checkbox',
       // ''
     );
-    let forgotPassowrd = new AnchorTag('Forgot Password?');
+    let forgotPassowrd = new AnchorTag({text:'Forgot Password?',onClick: ()=>{
+      console.log("sign In button")
+    }});
     this.rememberForgetDiv.appendChild(rememberMe.InputLabelDiv);
     this.rememberForgetDiv.appendChild(forgotPassowrd.AnchorTag);
   }

@@ -17,6 +17,7 @@ export class InputLabelDiv {
       onFocus,
       onChange,
       onBlur,
+      onSubmit
     }
   ) {
     this.inputLabelDiv = document.createElement('div');
@@ -33,7 +34,8 @@ export class InputLabelDiv {
         name:name,
         onFocus: onFocus,
         onChange: onChange,
-        onBlur:onBlur
+        onBlur:onBlur,
+        onSubmit:onSubmit
       }
      
     );
