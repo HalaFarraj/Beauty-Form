@@ -8,14 +8,17 @@ export function checkField(inputTarget) {
     if (!validEmail) {
       let errorMessage =
         "Invalid email address. Valid e-mail can contain only latin letters, numbers, '@' and '.'";
-      document.getElementsByTagName('p')[0].innerText = errorMessage;
-      document
+      document.forms['registerForm'].getElementsByTagName('p')[0].innerText = errorMessage;
+
+      console.log(document.forms['registerForm'].getElementsByTagName('p')[0])
+
+      document.forms['registerForm']
         .getElementsByTagName('p')[0]
         .classList.add('show-error');
         document.forms['registerForm']['createAccount'].disabled=true;
     } else {
-      document.getElementsByTagName('p')[0].innerText = '';
-      document
+      document.forms['registerForm'].getElementsByTagName('p')[0].innerText = '';
+      document.forms['registerForm']
         .getElementsByTagName('p')[0]
         .classList.remove('show-error');
         document.forms['registerForm']['createAccount'].disabled=false;
@@ -29,15 +32,15 @@ export function checkField(inputTarget) {
 
       if (!validPassword) {
         let errorMessage = `Your password must be have at least: 8 characters long, 1 uppercase & 1 lowercase character and 1 number`;
-        document.getElementsByTagName('p')[2].innerText =
+        document.forms['registerForm'].getElementsByTagName('p')[2].innerText =
           errorMessage;
-        document
+        document.forms['registerForm']
           .getElementsByTagName('p')[2]
           .classList.add('show-error');
           document.forms['registerForm']['createAccount'].disabled=true;
       } else {
-        document.getElementsByTagName('p')[2].innerText = '';
-        document
+        document.forms['registerForm'].getElementsByTagName('p')[2].innerText = '';
+        document.forms['registerForm']
           .getElementsByTagName('p')[2]
           .classList.remove('show-error');
           document.forms['registerForm']['createAccount'].disabled=false;
@@ -49,8 +52,8 @@ export function checkField(inputTarget) {
         );
         console.log(validConfirmPassword);
         if (validConfirmPassword) {
-          document.getElementsByTagName('p')[3].innerText = '';
-          document
+          document.forms['registerForm'].getElementsByTagName('p')[3].innerText = '';
+          document.forms['registerForm']
             .getElementsByTagName('p')[3]
             .classList.remove('show-error');
           if (
@@ -59,22 +62,22 @@ export function checkField(inputTarget) {
           ) {
             console.log('equal passwords');
             document.forms['registerForm']['createAccount'].disabled=false;
-            document
+            document.forms['registerForm']
           .getElementsByTagName('p')[3]
           .classList.remove('show-error');
           } else {
-            document.getElementsByTagName('p')[3].innerText =
+            document.forms['registerForm'].getElementsByTagName('p')[3].innerText =
               'Passwords do not match';
-              document
+              document.forms['registerForm']
           .getElementsByTagName('p')[3]
           .classList.add('show-error');
               document.forms['registerForm']['createAccount'].disabled=true;
 
           }
         } else {
-          document.getElementsByTagName('p')[3].innerText =
+          document.forms['registerForm'].getElementsByTagName('p')[3].innerText =
             'Your password must be have at least: 8 characters long, 1 uppercase & 1 lowercase character and 1 number ';
-          document
+          document.forms['registerForm']
             .getElementsByTagName('p')[3]
             .classList.add('show-error');
         }

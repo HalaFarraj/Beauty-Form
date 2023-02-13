@@ -28,14 +28,13 @@ input[type="checkbox"]
 {
     border: 1px solid var(--navyBlue);
     box-shadow: none;
-    /* width: 15%; */
 }
 
 input[type=""]:valid{
     background-color: lightgreen;
 }
 input:disabled{
-    border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
+    border: 1px solid var(--darkLightGrey);
+  background-color: var(--lightGrey);
+  color: var(--grey);
 }

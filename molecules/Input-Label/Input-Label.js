@@ -2,54 +2,40 @@ import { Input } from '../../atoms/Input/Input.js';
 import { Label } from '../../atoms/Label/Label.js';
 import { Paragraph } from '../../atoms/Paragraph/Paragraph.js';
 
-//pass an object as a parameter
 export class InputLabelDiv {
-  constructor(
-    // className = 'inputs',
-    {
-      labelText,
-      inputType = 'text',
-      placeholder = '',
-      value = '',
-      // inputClassName = '',
-      name = '',
-      paragraphName,
-      onFocus,
-      onChange,
-      onBlur,
-      onSubmit
-    }
-  ) {
+  constructor({
+    labelText,
+    inputType = 'text',
+    placeholder = '',
+    value = '',
+    name = '',
+    onFocus,
+    onChange,
+    onBlur,
+    onSubmit,
+  }) {
     this.inputLabelDiv = document.createElement('div');
     this.inputLabelDiv.className = 'inputs';
-    // this.inputLabelDiv.className += ` ${className}`;
 
     let label = new Label(labelText);
-    let input = new Input(
-      {
-        type:inputType,
-        placeholder : placeholder,
-        value:value,
-        // paragraphName,
-        name:name,
-        onFocus: onFocus,
-        onChange: onChange,
-        onBlur:onBlur,
-        onSubmit:onSubmit
-      }
-     
-    );
+    let input = new Input({
+      type: inputType,
+      placeholder: placeholder,
+      value: value,
+      name: name,
+      onFocus: onFocus,
+      onChange: onChange,
+      onBlur: onBlur,
+      onSubmit: onSubmit,
+    });
 
-   
-    
-    this.errorMessage = new Paragraph({text:"ret"});
+    this.errorMessage = new Paragraph({ text: 'ret' });
     this.inputLabelDiv.appendChild(label.Label);
-    // input.CheckInput();
     this.inputLabelDiv.appendChild(input.Input);
-    this.inputLabelDiv.appendChild(this.errorMessage.Paragraph)
+    this.inputLabelDiv.appendChild(this.errorMessage.Paragraph);
   }
 
-  appendErrorMessage(text=''){
+  appendErrorMessage(text = '') {
     this.errorMessage.Paragraph(text);
   }
   get InputLabelDiv() {

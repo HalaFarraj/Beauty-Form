@@ -19,8 +19,7 @@
     height: 105%;
     margin: 0 auto;
     border-radius: 19px;
-    /* align-self: center; */
-    /* border: var(--navyBlue) 1px solid ; */
+
     background-color: white;
     box-shadow: 5px 0px 15px 3px #dde1ec;
 }

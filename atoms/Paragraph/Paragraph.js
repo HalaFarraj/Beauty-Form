@@ -2,7 +2,6 @@ export class Paragraph {
   constructor({ text = '', name }) {
     this.paragraph = document.createElement('p');
     this.paragraph.innerText = text;
-    // this.paragraph.name='hahaha';
   }
   showMessage(show) {
     if (show) {

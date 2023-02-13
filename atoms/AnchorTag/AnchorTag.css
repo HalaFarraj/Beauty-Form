@@ -3,7 +3,8 @@ a{
     font-size: 15px;
     align-self: center;
     text-decoration: none;
-    /* color: red; */
+    color: red;
+    cursor: pointer;
 }
 a:link{
     color: var(--navyBlue);

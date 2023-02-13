@@ -2,7 +2,6 @@ export class Select {
   constructor(
     name = '',
     id = '',
-    //  className = 'select',
     ...options
   ) {
 

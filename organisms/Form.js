@@ -14,8 +14,7 @@ export class Form {
 
       let element = new fields[i].atom({
         ...fields[i],
-        // onChange: this.onChange,
-        // onFocus: this.onChange,
+
         onBlur: this.onChange,
         
       })[getterName];
@@ -32,10 +31,10 @@ export class Form {
   }
 
   onChange(event) {
-    if (document.forms['registerForm']) {
+    if (event.target.parentNode == document.forms['registerForm']) {
+      // console.log(event.target)
       if (event.target.type == 'submit') {
-
-        //sign up
+        console.log(event.target)
         let email = document.forms['registerForm']['email'].value;
         let password = document.forms['registerForm']['password'].value;
 
@@ -44,8 +43,6 @@ export class Form {
       else {
         console.log(event.target);
         let errorMsg = checkField(event.target);
-        console.log('********************************This is onChange function');
-        // console.log(this);
       }
     }
     else{
