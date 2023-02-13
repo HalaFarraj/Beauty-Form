@@ -1,24 +1,24 @@
 .headerBg{
-    height: 20%; 
+    height: 20%;
 }
 .headerBg img{
-    height: 100%;
-    width: 100%;
     border-radius: 19px;
     box-shadow: 0 8px 8px -4px rgb(191, 191, 192);
+    height: 100%;
+    width: 100%;
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:768px){    
     .headerBg{
         height: 100%;
         width: 55%;
     }
 
     .headerBg img{
-        height: 100%;
-        width: 100%;
         border-radius: 19px;
         box-shadow: 8px 0px 8px -5px rgba(191, 191, 192, 0.59);
         content: url('../../assets/3143855.jpg');
+        height: 100%;
+        width: 100%;
     }
-}
+     }

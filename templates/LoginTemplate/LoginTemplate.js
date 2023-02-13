@@ -6,7 +6,7 @@ import { loginElements } from '../../constants/login.js';
 export class LoginTemplate {
   constructor() {
     this.templateContainer = document.createElement('div');
-    this.templateContainer.className = 'form'; 
+    this.templateContainer.className = 'form';
 
     let headerImg = new BackgroundImg('../assets/headerBg (copy).jpg')
       .BackgroundImg;

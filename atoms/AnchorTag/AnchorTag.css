@@ -1,10 +1,10 @@
 a{
-    font-weight: bold;
-    font-size: 15px;
     align-self: center;
-    text-decoration: none;
     color: red;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
 }
 a:link{
     color: var(--navyBlue);

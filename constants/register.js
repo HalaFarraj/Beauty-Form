@@ -28,7 +28,6 @@ export const registerElements = [
     inputType: 'text',
     name: 'username',
     getterName: 'InputLabelDiv',
-
   },
   {
     atom: InputLabelDiv,
@@ -52,17 +51,17 @@ export const registerElements = [
 
     validate: validatePassword,
   },
-    {
-      atom: CountryLabel,
-      labelText: 'Country',
-      selectName: 'countries',
-      selectID: 'countries',
-      getterName: 'CountryLabel',
-      options: COUNTRIES,
-    },
+  {
+    atom: CountryLabel,
+    labelText: 'Country',
+    selectName: 'countries',
+    selectID: 'countries',
+    getterName: 'CountryLabel',
+    options: COUNTRIES,
+  },
   {
     atom: Gender,
-    getterName: "Gender"
+    getterName: 'Gender',
   },
   {
     atom: Input,

@@ -8,20 +8,22 @@
 }
 
 .login-body label{
-    padding-bottom: 5px;
     font-size: 15px;
     font-weight: bold;
+    padding-bottom: 5px;
 }
 .hide-content{
     display: none !important;
 }
 @media only screen and (min-width:768px){
+    
     .login-body{
         width: 80%;
     }
 }
 
 @media only screen and (max-width:566px) {
+    
     .login-body label{
         font-size: 12px;
     }

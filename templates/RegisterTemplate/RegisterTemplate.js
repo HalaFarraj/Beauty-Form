@@ -1,11 +1,6 @@
 const COUNTRIES = ['Australia', 'Canada', 'Germany', 'US'];
 
-import { Input } from '../../atoms/Input/Input.js';
-import { CountryLabel } from '../../molecules/Country-Label/Country-Label.js';
-import { Gender } from '../../molecules/Gender/Gender.js';
-import { HaveAccount } from '../../molecules/HaveAccount/HaveAccount.js';
 import { HeaderText } from '../../molecules/HeaderText/HeaderText.js';
-import { InputLabelDiv } from '../../molecules/Input-Label/Input-Label.js';
 import { BackgroundImg } from '../../atoms/BackgroundImg/BackgroundImg.js';
 import { Form } from '../../organisms/Form.js';
 import { registerElements } from '../../constants/register.js';
@@ -28,11 +23,7 @@ export class RegisterTemplate {
     ).HeaderText;
     registerForm.appendChild(headerText);
 
-    let formBody = new Form(
-      'registerForm',
-      true,
-      registerElements
-    );
+    let formBody = new Form('registerForm', true, registerElements);
     registerForm.appendChild(formBody.Form);
     this.templateContainer.appendChild(registerForm);
   }

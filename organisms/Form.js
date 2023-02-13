@@ -16,7 +16,6 @@ export class Form {
         ...fields[i],
 
         onBlur: this.onChange,
-        
       })[getterName];
 
       form.append(element);
@@ -31,25 +30,28 @@ export class Form {
   }
 
   onChange(event) {
-    if (event.target.parentNode.parentNode== document.forms['registerForm']|| event.target.parentNode== document.forms['registerForm']) {
-      console.log(event.target.parentNode.parentNode)
+    if (
+      event.target.parentNode.parentNode ==
+        document.forms['registerForm'] ||
+      event.target.parentNode == document.forms['registerForm']
+    ) {
+      console.log(event.target.parentNode.parentNode);
       if (event.target.type == 'submit') {
-        console.log(event.target)
+        console.log(event.target);
         let email = document.forms['registerForm']['email'].value;
-        let password = document.forms['registerForm']['password'].value;
+        let password =
+          document.forms['registerForm']['password'].value;
 
-        register(email,password)
-      } 
-      else {
+        register(email, password);
+      } else {
         console.log(event.target);
         let errorMsg = checkField(event.target);
       }
-    }
-    else{
+    } else {
       if (event.target.type == 'submit') {
-      let email = document.forms['loginForm']['email'].value;
-      let password = document.forms['loginForm']['password'].value;
-      signIn(email,password )
+        let email = document.forms['loginForm']['email'].value;
+        let password = document.forms['loginForm']['password'].value;
+        signIn(email, password);
       }
     }
   }

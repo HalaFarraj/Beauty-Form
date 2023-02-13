@@ -6,7 +6,6 @@ import {
   validatePassword,
 } from '../utilities/validation.js';
 
-
 export const loginElements = [
   {
     atom: InputLabelDiv,
@@ -15,7 +14,7 @@ export const loginElements = [
     labelText: 'Email',
     inputType: 'email',
     name: 'email',
-    getterName: "InputLabelDiv",
+    getterName: 'InputLabelDiv',
     validate: validateEmail,
   },
   {
@@ -25,18 +24,18 @@ export const loginElements = [
     labelText: 'Password',
     inputType: 'password',
     name: 'password',
-    getterName: "InputLabelDiv",
+    getterName: 'InputLabelDiv',
     validate: validatePassword,
   },
   {
     atom: RememberForgetDiv,
-    getterName: "RememberForgetDiv",
+    getterName: 'RememberForgetDiv',
   },
   {
     atom: Input,
     type: 'submit',
     value: 'Login',
     name: 'login',
-    getterName: "Input",
+    getterName: 'Input',
   },
 ];

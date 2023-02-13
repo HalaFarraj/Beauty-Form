@@ -1,21 +1,21 @@
 .remember-forget{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
     font-size: 13px;
+    justify-content: space-between;
 }
 
 .remember-me{
-    display: flex;
     align-items: center;
-    width: 50%;
+    display: flex;
     font-size: 10px;
+    width: 50%;
 }
 
 .remember-me label{
+    font-size: 15px;
     margin-left: 5px;
     margin-top: 5px;
-    font-size: 15px;
 }
 
 .remember-me  input[type="checkbox"]
