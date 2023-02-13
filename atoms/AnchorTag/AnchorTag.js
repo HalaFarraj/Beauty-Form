@@ -5,7 +5,8 @@ export class AnchorTag {
     this.anchortag.href = href;
   }
 
-  switchContent() {
+  switchContent(event) {
+    console.log(event)
     this.anchortag.addEventListener('click', () => {
       // alert('Hi');
       console.log(document.getElementsByClassName('login-form'));

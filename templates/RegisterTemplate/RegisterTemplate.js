@@ -28,82 +28,13 @@ export class RegisterTemplate {
     ).HeaderText;
     registerForm.appendChild(headerText);
 
-    // let email = new InputLabelDiv(
-    //   undefined,
-    //   'Email',
-    //   'email',
-    //   'Email',
-    //   '',
-    //   '',
-    //   'email'
-    // ).InputLabelDiv;
-
-    // let username = new InputLabelDiv(
-    //   'inputs',
-    //   'Username',
-    //   'text',
-    //   'Username',
-    //   '',
-    //   '',
-    //   'username'
-    // ).InputLabelDiv;
-
-    // let password = new InputLabelDiv(
-    //   'inputs',
-    //   'Password',
-    //   'password',
-    //   'Password',
-    //   '',
-    //   '',
-    //   'password'
-    // ).InputLabelDiv;
-
-    // let confirmpassword = new InputLabelDiv(
-    //   'inputs',
-    //   'Confirm Password',
-    //   'password',
-    //   'Confirm Password',
-    //   '',
-    //   '',
-    //   'confirmPassword'
-    // ).InputLabelDiv;
-
-    // let country = new CountryLabel(
-    //   'Country',
-    //   'countries',
-    //   'countries',
-    //   COUNTRIES
-    // ).CountryLabel;
-
-    // let gender = new Gender().Gender;
-
-    // let registerButton = new Input(
-    //   'submit',
-    //   undefined,
-    //   'Create Account',
-    //   'submit',
-    //   undefined
-    // ).Input;
-
     let formBody = new Form(
       'registerForm',
       true,
       registerElements
-      // email,
-      // username,
-      // password,
-      // confirmpassword,
-      // country,
-      // gender,
-      // registerButton
     );
-
     registerForm.appendChild(formBody.Form);
-
     this.templateContainer.appendChild(registerForm);
-
-    // let haveAccount = new HaveAccount(true).HaveAccount;
-    // this.templateContainer.appendChild(haveAccount);
   }
   handleChange(event) {
     console.log(event.target.value, 'HI');

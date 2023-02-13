@@ -1,5 +1,6 @@
 import { Input } from '../../atoms/Input/Input.js';
 import { Label } from '../../atoms/Label/Label.js';
+import { Paragraph } from '../../atoms/Paragraph/Paragraph.js';
 
 //pass an object as a parameter
 export class InputLabelDiv {
@@ -12,6 +13,7 @@ export class InputLabelDiv {
       value = '',
       // inputClassName = '',
       name = '',
+      paragraphName,
       onFocus,
       onChange,
       onBlur,
@@ -27,7 +29,7 @@ export class InputLabelDiv {
         type:inputType,
         placeholder : placeholder,
         value:value,
-        // inputClassName,
+        // paragraphName,
         name:name,
         onFocus: onFocus,
         onChange: onChange,
@@ -36,11 +38,18 @@ export class InputLabelDiv {
      
     );
 
+   
+    
+    this.errorMessage = new Paragraph({text:"ret"});
     this.inputLabelDiv.appendChild(label.Label);
-    input.CheckInput();
+    // input.CheckInput();
     this.inputLabelDiv.appendChild(input.Input);
+    this.inputLabelDiv.appendChild(this.errorMessage.Paragraph)
   }
 
+  appendErrorMessage(text=''){
+    this.errorMessage.Paragraph(text);
+  }
   get InputLabelDiv() {
     return this.inputLabelDiv;
   }

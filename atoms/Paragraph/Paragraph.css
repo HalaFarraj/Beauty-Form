@@ -1,0 +1,11 @@
+p{
+    display: none;
+    /* padding: 2px; */
+    color: red !important;
+    font-size: 15px;
+    /* background-color: lightcoral; */
+}
+
+.show-error{
+    display: block !important;
+}

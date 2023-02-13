@@ -27,7 +27,7 @@ export class Input {
     placeholder = '',
     value = '',
     // className = 'input',
-    variant='input',
+    // variant='input',
     name = '',
     onChange,
     onFocus,
@@ -38,8 +38,7 @@ export class Input {
     this.input.type = type;
     this.input.placeholder = placeholder;
     this.input.value = value;
-    // this.input.className = className;
-    this.input.className =  objectVariant[variant]?? objectVariant.input;
+    // this.input.className =  objectVariant[variant]?? objectVariant.input;
 
     this.input.name = name;
     this.input.setAttribute('required', '');

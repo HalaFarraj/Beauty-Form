@@ -47,7 +47,7 @@ export const registerElements = [
     value: '',
     labelText: 'Confirm Password',
     inputType: 'password',
-    name: 'cofinrmPassword',
+    name: 'confirmPassword',
     getterName: 'InputLabelDiv',
 
     validate: validatePassword,
