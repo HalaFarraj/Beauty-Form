@@ -1,0 +1,24 @@
+.headerBg{
+    height: 20%;
+}
+.headerBg img{
+    border-radius: 19px;
+    box-shadow: var(--mobileHeaderBgShadow);
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width:768px){    
+    .headerBg{
+        height: 100%;
+        width: 55%;
+    }
+
+    .headerBg img{
+        border-radius: 19px;
+        box-shadow: var(--desktopHeaderBgShadow);
+        content: var(--desktopViewBg);
+        height: 100%;
+        width: 100%;
+    }
+     }

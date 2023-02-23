@@ -1,0 +1,1 @@
+{"version":3,"file":"Form.d.ts","sourceRoot":"","sources":["../../../src/Components/Organisms/Form.ts"],"names":[],"mappings":"AAMA,qBAAa,IAAI;IACf,OAAO,CAAC,YAAY,CAAiB;gBACzB,QAAQ,EAAE,MAAM,EAAE,WAAW,EAAE,OAAO,EAAE,MAAM,EAAE,GAAG,EAAE;IA0BjE,QAAQ,CAAC,KAAK,EAAE,KAAK;IA8BrB,IAAI,IAAI,mBAEP;CACF"}

@@ -1,0 +1,32 @@
+@import url('../Components/Atoms/BackgroundImg/BackgroundImg.css');
+@import url('../Components/Atoms/Heading/Heading.css');
+@import url('../Components/Atoms/Input/Input.css');
+@import url('../Components/Atoms/Label/Label.css');
+@import url('../Components/Atoms/Link/Link.css');
+@import url('../Components/Atoms/Paragraph/Paragraph.css');
+@import url('../Components/Atoms/Select/Select.css');
+@import url('../Components/Molecules/CountryWrapper/CountryWrapper.css');
+@import url('../Components/Molecules/ForgetPasswordWrapper/ForgetPasswordWrapper.css');
+@import url('../Components/Molecules/Gender/Gender.css');
+@import url('../Components/Molecules/HaveAccount/HaveAccount.css');
+@import url('../Components/Molecules/InputLabel/InputLabel.css');
+@import url('../Components/Molecules/TitlesWrapper/TitlesWrapper.css');
+@import url('../Components/Organisms/Form.css');
+@import url('../Components/Templates/LoginTemplate/LoginTemplates.css');
+@import url('../Components/Templates/RegisterTemplate/RegisterTemplates.css');
+@import url('./Variables.css');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--lightBabyBlue);
+    color: var(--navyBlue);
+    height: 100%;
+    width: 100%;
+}

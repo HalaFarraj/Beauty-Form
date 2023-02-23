@@ -1,0 +1,1 @@
+{"version":3,"file":"switchContent.js","sourceRoot":"","sources":["../../src/Utilities/switchContent.ts"],"names":[],"mappings":"AAAA,MAAM,UAAU,aAAa,CAAC,IAAY,EAAE,EAAU;IACpD,QAAQ;SACL,sBAAsB,CAAC,MAAM,CAAC,CAC9B,EAAE,CAAC,CAAC,SAAS,CAAC,MAAM,CAAC,cAAc,CAAC,CAAC;IACxC,QAAQ;SACL,sBAAsB,CAAC,MAAM,CAAC,CAC9B,IAAI,CAAC,CAAC,SAAS,CAAC,GAAG,CAAC,cAAc,CAAC,CAAC;AACzC,CAAC"}
