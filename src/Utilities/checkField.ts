@@ -5,20 +5,12 @@ import { validateEmail, validatePassword } from './validate.js';
 export function checkField(inputTarget: HTMLInputElement) {
   if (inputTarget.type == 'email') {
     let validEmail: boolean = validateEmail(inputTarget.value);
-    console.log(validEmail);
 
     if (!validEmail) {
       let errorMessage: string = FORM_STRINGS.invalidEmail;
-      console.log(document.forms[FormType.registerForm]);
       document.forms[FormType.registerForm].getElementsByTagName(
         'p'
       )[0].innerText = errorMessage;
-
-      console.log(
-        document.forms[FormType.registerForm].getElementsByTagName(
-          'p'
-        )[0]
-      );
 
       document.forms[FormType.registerForm]
         .getElementsByTagName('p')[0]
@@ -43,7 +35,6 @@ export function checkField(inputTarget: HTMLInputElement) {
     if (inputTarget.name == 'password') {
       let validPassword: boolean;
       validPassword = validatePassword(inputTarget.value);
-      console.log(validPassword);
       if (!validPassword) {
         let errorMessage: string;
         errorMessage = FORM_STRINGS.invalidPassword;
@@ -74,7 +65,6 @@ export function checkField(inputTarget: HTMLInputElement) {
         let validConfirmPassword: boolean = validatePassword(
           inputTarget.value
         );
-        console.log(validConfirmPassword);
         if (validConfirmPassword) {
           document.forms[FormType.registerForm].getElementsByTagName(
             'p'
@@ -86,7 +76,6 @@ export function checkField(inputTarget: HTMLInputElement) {
             inputTarget.value ===
             document.forms[FormType.registerForm]['password'].value
           ) {
-            console.log('equal passwords');
             document.forms[FormType.registerForm][
               'createAccount'
             ].disabled = false;

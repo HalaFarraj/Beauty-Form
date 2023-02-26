@@ -1,9 +1,9 @@
-p{
-    color: var(--red) ;
-    display: none;
-    font-size: 15px;
+p {
+  color: var(--red);
+  display: none;
+  font-size: 15px;
 }
 
-.show-error{
-    display: block ;
+.show-error {
+  display: block;
 }

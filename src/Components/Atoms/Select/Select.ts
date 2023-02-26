@@ -1,6 +1,6 @@
 export class Select {
   private _select: HTMLSelectElement;
-  constructor(name: string = '', id: string = '', ...options: any[]) {
+  constructor(name: string = '', id: string = '', options: string[]) {
     this._select = document.createElement('select');
     this._select.name = name;
     this._select.id = id;

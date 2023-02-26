@@ -12,5 +12,4 @@ document.body.append(registerContainer.RegisterTemplate);
 
 window.onload = () => {
   emailsMap = createEmailsMap();
-  console.log(emailsMap);
 };

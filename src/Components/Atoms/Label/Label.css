@@ -1,6 +1,6 @@
-label{
-    color: var(--navyBlue);
-    font-size: 15px;
-    font-weight: bold;
-    padding-bottom: 5px;
+label {
+  color: var(--navyBlue);
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
 }

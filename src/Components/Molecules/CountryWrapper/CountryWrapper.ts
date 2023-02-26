@@ -5,7 +5,7 @@ interface ICountryWrapperProps {
   labelText: string;
   selectName: string;
   selectID: string;
-  options: any[];
+  options: string[];
 }
 
 export class CountryWrapper {
@@ -20,7 +20,7 @@ export class CountryWrapper {
     let select: HTMLSelectElement = new Select(
       props.selectName,
       props.selectID,
-      ...props.options
+      props.options
     ).Select;
     this._wrapper.appendChild(select);
   }

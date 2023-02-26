@@ -40,9 +40,7 @@ export class Form {
         document.forms[FormType.registerForm] ||
       target.parentNode == document.forms[FormType.registerForm]
     ) {
-      console.log(target.parentNode?.parentNode);
       if ((target as HTMLInputElement).type == 'submit') {
-        console.log(event.target);
         let email =
           document.forms[FormType.registerForm]['email'].value;
         let password =

@@ -1,40 +1,39 @@
-input{
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 0 10px 2px var(--lightBabyBlue);
-    cursor: pointer;
-    height: 20px;
-    padding:20px;
+input {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px 2px var(--lightBabyBlue);
+  cursor: pointer;
+  height: 20px;
+  padding: 20px;
 }
 
-input:hover{
-    border: 1px solid var(--babyBlue);
-    box-shadow: 0 0 5pt 2pt var(--babyBlue);
+input:hover {
+  border: 1px solid var(--babyBlue);
+  box-shadow: 0 0 5pt 2pt var(--babyBlue);
 }
 
-input[type="submit"]{
-    background-color: var(--navyBlue);
-    border-radius: 10px;
-    color: var(--white);
-    cursor: pointer;
-    font-size: 15px;
-    font-weight:bold;
-    height: 40px;
-    padding: 10px;
-    width: 100%;
+input[type='submit'] {
+  background-color: var(--navyBlue);
+  border-radius: 10px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  height: 40px;
+  padding: 10px;
+  width: 100%;
 }
 
-input[type="checkbox"]
-{
-    border: 1px solid var(--navyBlue);
-    box-shadow: none;
+input[type='checkbox'] {
+  border: 1px solid var(--navyBlue);
+  box-shadow: none;
 }
 
-input[type=""]:valid{
-    background-color: lightgreen;
+input[type='']:valid {
+  background-color: var(--lightGreen);
 }
-input:disabled{
-    background-color: var(--lightGrey);
-    border: 1px solid var(--darkLightGrey);
-    color: var(--grey);
+input:disabled {
+  background-color: var(--lightGrey);
+  border: 1px solid var(--darkLightGrey);
+  color: var(--grey);
 }

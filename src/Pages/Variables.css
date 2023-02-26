@@ -1,16 +1,17 @@
-:root{
-    --babyBlue: #cccdef;
-    --darkLightGrey: #999999;
-    --desktopHeaderBgShadow: 8px 0px 8px -5px rgba(191, 191, 192, 0.59);
-    --desktopViewBg :url('../../../../assets/3143855.jpg');
-    --grey: #666666;
-    --lightBabyBlue: #e3e7f3;
-    --lightGrey: #cccccc;
-    --lightestBabyBlue: #dde1ec;
-    --mobileHeaderBgShadow: 0 8px 8px -4px rgb(191, 191, 192);
-    --navyBlue:#0B005D;
-    --purple :#800080;
-    --red: #ff0000;
-    --white : #ffffff;
-    --yellow:  #ffff00;
+:root {
+  --babyBlue: #cccdef;
+  --darkLightGrey: #999999;
+  --desktopHeaderBgShadow: 8px 0px 8px -5px rgba(191, 191, 192, 0.59);
+  --desktopViewBg: url('../../../../assets/3143855.jpg');
+  --grey: #666666;
+  --lightBabyBlue: #e3e7f3;
+  --lightestBabyBlue: #dde1ec;
+  --lightGreen: #90ee90;
+  --lightGrey: #cccccc;
+  --mobileHeaderBgShadow: 0 8px 8px -4px rgb(191, 191, 192);
+  --navyBlue: #0b005d;
+  --purple: #800080;
+  --red: #ff0000;
+  --white: #ffffff;
+  --yellow: #ffff00;
 }
