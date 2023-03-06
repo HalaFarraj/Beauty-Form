@@ -1,0 +1,9 @@
+.gender {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gender input {
+  box-shadow: none;
+  height: initial;
+}

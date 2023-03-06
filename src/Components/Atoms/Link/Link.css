@@ -1,0 +1,23 @@
+a {
+  align-self: center;
+  color: var(--red);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:link {
+  color: var(--navyBlue);
+}
+
+a:visited {
+  color: var(--purple);
+}
+
+a:hover {
+  color: var(--red);
+}
+
+a:active {
+  color: var(--yellow);
+}

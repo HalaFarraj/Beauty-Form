@@ -1,9 +1,0 @@
-p{
-    color: red !important;
-    display: none;
-    font-size: 15px;
-}
-
-.show-error{
-    display: block !important;
-}
